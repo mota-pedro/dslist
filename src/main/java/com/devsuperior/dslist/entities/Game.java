@@ -31,6 +31,9 @@ public class Game {
 	@Column(columnDefinition="TEXT")
 	private String longDescription;
 	
+	public Game() {
+	}
+	
 	public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl,
 			String shortDescription, String longDescription) {
 		this.id = id;
@@ -52,11 +55,11 @@ public class Game {
 		this.id = id;
 	}
 
-	public String getName() {
+	public String getTitle() {
 		return title;
 	}
 
-	public void setName(String name) {
+	public void setTitle(String name) {
 		this.title = name;
 	}
 
